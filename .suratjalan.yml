@@ -6,8 +6,12 @@ apps:
     platform: wordpress
     storage:
       - wp-content
+      - backup
     deploy:
       - apt-get update && apt-get upgrade -y && apt-get install -y mariadb-client php-mbstring
+  app2:
+    platform: custom
+    type: php
 
 dbs:
   db1:
