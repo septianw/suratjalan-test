@@ -11,4 +11,5 @@ script:
 - dpkg-deb --build arnpod-0.1.0
 - sudo dpkg -i arnpod-0.1.0.deb
 - cat ~/.my.cnf
+- sed -i -e 's_localhost_/var/run/mysqld/mysqld.sock_g' /etc/margono.conf
 - sudo margono r .suratjalan.yml
