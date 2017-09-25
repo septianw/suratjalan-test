@@ -18,5 +18,5 @@ script:
   - cat ~/.my.cnf
   - sudo mkdir -p /usr/local/lib/arnpod/share/artefact
   - sudo bash -x /usr/sbin/petugas
-  - docker-compose ps
+  - docker ps -a
   - cat /var/log/upstart/nginx.log
