@@ -19,4 +19,4 @@ script:
   - sudo mkdir -p /usr/local/lib/arnpod/share/artefact
   - sudo bash -x /usr/sbin/petugas
   - docker-compose ps
-  - journalctl -xe
+  - cat /var/log/upstart/nginx.log
