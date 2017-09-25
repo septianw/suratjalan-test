@@ -16,4 +16,5 @@ script:
   - dpkg-deb --build arnpod-0.1.0
   - sudo dpkg -i arnpod-0.1.0.deb
   - cat ~/.my.cnf
+  - sudo mkdir /usr/local/lib/arnpod/share/artefact
   - sudo margono r .suratjalan.yml
