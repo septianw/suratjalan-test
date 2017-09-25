@@ -18,3 +18,4 @@ script:
   - cat ~/.my.cnf
   - sudo mkdir -p /usr/local/lib/arnpod/share/artefact
   - sudo margono r .suratjalan.yml
+  - sudo bash -x /usr/sbin/petugas
