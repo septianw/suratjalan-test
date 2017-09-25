@@ -1,0 +1,14 @@
+# version: 0.1.0
+# surat jalan
+
+apps:
+  app1:
+    platform: wordpress
+    storage:
+      - wp-content
+    deploy:
+      - apt-get update && apt-get upgrade -y && apt-get install -y mariadb-client php-mbstring
+
+dbs:
+  db1:
+    engine: mysql
