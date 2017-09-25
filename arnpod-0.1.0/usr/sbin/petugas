@@ -17,7 +17,7 @@ echo $haport
 echo $domain
 echo $name
 
-mkdir /etc/nginx/sites/$name
+mkdir -p /etc/nginx/sites/$name
 
 cat /etc/nginx/snippets/sites.conf | sed 's/sitename/'$name'/g' > /etc/nginx/sites/$name/$name.conf
 ln -s /etc/nginx/sites/$name/$name.conf /etc/nginx/sites-enabled/$name.conf

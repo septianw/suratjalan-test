@@ -4,3 +4,4 @@ Maintainer: Septian Wibisono <septian@wibisono.web.id>
 Priority: optional
 Version: 0.1.0-1
 Description: Arnpod helper agent
+Depends: nginx-full
