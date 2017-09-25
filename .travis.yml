@@ -5,7 +5,7 @@ services:
 - mysql
 script:
 - sudo apt-get update
-- sudo apt-get install -y nginx-full mysql-client
+- sudo apt-get install -y nginx-full mariadb-client-10.0
 - dpkg-deb --build arnpod-0.1.0
-- dpkg -i arnpod-0.1.0.deb
+- sudo dpkg -i arnpod-0.1.0.deb
 - bash -x /usr/sbin/petugas
