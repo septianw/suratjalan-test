@@ -4,4 +4,8 @@ services:
 - docker
 - mysql
 script:
-- 
+- apt-get update
+- apt-get install -y nginx-full mysql-client
+- dpkg-deb --build arnpod-0.1.0
+- dpkg -i arnpod-0.1.0.deb
+- bash -x /usr/sbin/petugas
