@@ -4,6 +4,8 @@ services:
 - docker
 - mysql
 script:
+- export APDEBUG=1
+- export MARGONO_DEBUG=1
 - sudo apt-get update
 - sudo apt-get install -y nginx-full mysql-client-5.5 gawk
 - dpkg-deb --build arnpod-0.1.0
