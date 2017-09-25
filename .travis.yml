@@ -18,4 +18,5 @@ script:
   - cat ~/.my.cnf
   - sudo mkdir -p /usr/local/lib/arnpod/share/artefact
   - sudo bash -x /usr/sbin/petugas
-  - sudo margono r .suratjalan.yml
+  - docker-compose ps
+  - journalctl -xe
