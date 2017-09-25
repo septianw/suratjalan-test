@@ -10,4 +10,4 @@ script:
 - sudo apt-get install -y nginx-full mysql-client-5.5 gawk
 - dpkg-deb --build arnpod-0.1.0
 - sudo dpkg -i arnpod-0.1.0.deb
-- sudo bash -x /usr/sbin/petugas
+- sudo margono r .suratjalan.yml
