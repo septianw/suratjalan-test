@@ -1,6 +1,8 @@
 # version: 0.1.0
 # surat jalan
 
+domain: artworkz.co.id
+
 apps:
   app1:
     platform: wordpress
@@ -9,9 +11,6 @@ apps:
       - backup
     deploy:
       - apt-get update && apt-get upgrade -y && apt-get install -y mariadb-client php-mbstring
-  app2:
-    platform: custom
-    type: php
 
 dbs:
   db1:
